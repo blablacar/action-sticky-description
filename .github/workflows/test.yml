@@ -24,7 +24,7 @@ jobs:
       if: ${{ github.event_name == 'pull_request' }}
       uses: ./
       with:
-        github_number: ${{ github.event.number }}
+        issue_number: ${{ github.event.number }}
         message: |
           ---
           sticky message

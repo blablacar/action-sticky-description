@@ -1,6 +1,6 @@
 ---
 name: Sticky description
-description: GitHub Action that publishes sticky message to Pull Request or Issue description
+description: GitHub Action that publishes sticky message to Pull Request or Issue description.
 inputs:
   github_token:
     description: >
