@@ -1,0 +1,25 @@
+---
+name: Sticky description
+description: GitHub Action that publishes sticky message to Pull Request or Issue description
+inputs:
+  github_token:
+    description: >
+      Personal access token (PAT) used to fetch the repository. The PAT is configured
+      with the local git config, which enables your scripts to run authenticated git
+      commands. The post-job step removes the PAT.
+    default: ${{ github.token }}
+  issue_number:
+    description: Pull Request or Issue number.
+    required: true
+  marker:
+    description: Marker of a message to update the same part of the text in the Issue description.
+    default: sticky-message
+  message:
+    description: A message which adds or updates in Pull Request or Issue description.
+    required: true
+runs:
+  using: node12
+  main: dist/index.js
+branding:
+  icon: git-pull-request
+  color: white

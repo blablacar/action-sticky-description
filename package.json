@@ -1,0 +1,34 @@
+{
+  "name": "action-sticky-description",
+  "version": "0.0.0",
+  "description": "GitHub Action that publishes sticky message to Pull Request or Issue description",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blablacar/action-sticky-description.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Actions"
+  ],
+  "author": "Pavlo Bashynskyi (levonet)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blablacar/action-sticky-description/issues"
+  },
+  "homepage": "https://github.com/blablacar/action-sticky-description#readme",
+  "dependencies": {
+    "@actions/core": "^1.5.0",
+    "@actions/github": "^5.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.28.6",
+    "eslint": "^7.29.0",
+    "jest": "^27.0.4"
+  },
+  "scripts": {
+    "dist": "$(npm bin)/ncc build index.js -m",
+    "lint": "$(npm bin)/eslint .",
+    "test": "$(npm bin)/jest --runInBand"
+  }
+}
