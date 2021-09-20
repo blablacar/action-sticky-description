@@ -1,0 +1,30 @@
+---
+name: test
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: yarn install
+    - run: yarn run lint
+    - run: yarn test
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Append or update sticky description
+      if: ${{ github.event_name == 'pull_request' }}
+      uses: ./
+      with:
+        issue_number: ${{ github.event.number }}
+        message: |
+          ---
+          sticky message
