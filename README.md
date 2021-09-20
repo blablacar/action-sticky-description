@@ -34,7 +34,7 @@ By default `sticky-message`.
 
 ### `message`
 
-**Required** A message which adds or updates in Pull Request or Issue description.
+**Required** A message that is added or updated in Pull Request or Issue description.
 
 ## Outputs
 

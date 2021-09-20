@@ -15,7 +15,7 @@ inputs:
     description: Marker of a message to update the same part of the text in the Issue description.
     default: sticky-message
   message:
-    description: A message which adds or updates in Pull Request or Issue description.
+    description: A message that is added or updated in Pull Request or Issue description.
     required: true
 runs:
   using: node12
