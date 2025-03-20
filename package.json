@@ -27,8 +27,8 @@
     "jest": "^27.0.4"
   },
   "scripts": {
-    "dist": "$(npm bin)/ncc build index.js -m",
-    "lint": "$(npm bin)/eslint .",
-    "test": "$(npm bin)/jest --runInBand"
+    "dist": "NODE_OPTIONS=--openssl-legacy-provider ncc build index.js -m",
+    "lint": "eslint .",
+    "test": "jest --runInBand"
   }
 }
