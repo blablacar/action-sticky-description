@@ -1,6 +1,6 @@
 {
   "name": "action-sticky-description",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "GitHub Action that publishes sticky message to Pull Request or Issue description",
   "main": "dist/index.js",
   "repository": {
