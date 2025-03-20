@@ -18,7 +18,7 @@ inputs:
     description: A message that is added or updated in Pull Request or Issue description.
     required: true
 runs:
-  using: node12
+  using: node20
   main: dist/index.js
 branding:
   icon: git-pull-request
