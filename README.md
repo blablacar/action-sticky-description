@@ -1,5 +1,9 @@
 # GitHub Action: Publish message to description
 
+> ⚠️ This code is no longer maintained.
+> We'd love it if you fork it and continue developing this action.
+> Otherwise, you can use the author's fork [levonet/action-sticky-description](https://github.com/levonet/action-sticky-description).
+
 GitHub Action that appends or updates sticky message in Pull Request or Issue description.
 
 ## Example usage
